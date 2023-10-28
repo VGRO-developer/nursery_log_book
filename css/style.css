@@ -1,50 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    --roboto-font:'Roboto', sans-serif;
+/* Root Section starts Here */
+
+body {
+  --roboto-font: "Roboto", sans-serif;
+  --header-color: #005b41;
+  --light-green:#024834;
+  --white-color:#fff;
+  --hardGray-color:#333;
+  --border-color:#33333336;
 }
 
-h1{
-    font-size: 5px;
+/* Root Section End Here */
+
+/* Button Set Section Start Here */
+.btn-green{
+    width: 150px;
+    height: 30px;
+    border: none !important;
+    border-radius: 2px;
+    background-color: var(--header-color);
+    color: var(--white-color);
 }
 
-.vgro_header_section{
-    width: 100%;
-    height:50px;
-    background-color:#005B41;
-    color: #fff;
-    display: flex;
-    align-items:center;
-    position: fixed;
+.btn-green:active{
+    width: 150px;
+    height: 30px;
+    border: none !important;
+    border-radius: 2px;
+    background-color: var(--light-green);
+    color: var(--white-color);
+}
+
+input{
+    outline: none !important;
+    border:0.5px solid var(--header-color);
+    background-color: transparent !important;
+    border-radius: 2px;
+    color:var(--header-color);
+    font-family: var(--roboto-font);
+    font-weight: bold;
+    padding: 5px;
+    border-radius:3px;
+}
+label{
+    padding-bottom: 6px;
+    font-family: var(--roboto-font);
+    font-weight: bold;
+}
+/* Button Section End Here  */
+
+/* Header Section Start Here */
+.vgro_header_section {
+  width: 100%;
+  height: 50px;
+  background-color: var(--header-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
   overflow: hidden;
-
 }
 
-.vgro_header_section img{
-    margin-left: 10px;
-    width:100px;
+.vgro_header_section img {
+  margin-left: 10px;
+  width: 100px;
 }
+/* Header Section End Here */
 
-.vgro_landing_section{
-  background-image: url('https://cdn.pixabay.com/photo/2023/03/26/11/40/terraces-7878191_1280.jpg');
-  background-size:cover;   
-  width:100%;
-  height:100vh;
+/* Landing Section Start Here */
+.vgro_landing_section {
+  background-image: url("https://cdn.pixabay.com/photo/2023/03/26/11/40/terraces-7878191_1280.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
   background-repeat: no-repeat;
 }
-.vgro_form_container{
-    padding-top: 150px;
+
+.vgro_form_container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.vgro_form_section {
+  width: 450px;
+  height: 350px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.2); 
+  color:var(--hardGray-color);
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(2px); 
+  border: 1px solid var(--border-color);
 }
 
-.vgro_form_section{
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
-    background-color: #fff;
-    color: #333;
-    font-family: ;
+.vgro_name_section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom:30px;
+  width: 350px;
 }
+
+.vgro_password_section {
+  display: flex;
+  /* padding-bottom: 50px; */
+  flex-direction: column;
+  width: 350px;
+}
+.vgro_button_section{
+    padding-top: 15px;
+}
+
+.vgro_form_section form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* Landing Section End Here */
