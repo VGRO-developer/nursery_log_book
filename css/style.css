@@ -9,50 +9,53 @@
 body {
   --roboto-font: "Roboto", sans-serif;
   --header-color: #005b41;
-  --light-green:#024834;
-  --white-color:#fff;
-  --hardGray-color:#333;
-  --border-color:#33333336;
+  --light-green: #024834;
+  --white-color: #fff;
+  --hardGray-color: #333;
+  --border-color: #33333336;
 }
-
 /* Root Section End Here */
 
+/* Admin Page Section Start Here */
+
 /* Button Set Section Start Here */
-.btn-green{
-    width: 150px;
-    height: 30px;
-    border: none !important;
-    border-radius: 2px;
-    background-color: var(--header-color);
-    color: var(--white-color);
+.btn-green {
+  width: 150px;
+  height: 30px;
+  border: none !important;
+  border-radius: 2px;
+  background-color: var(--header-color);
+  color: var(--white-color);
 }
 
-.btn-green:active{
-    width: 150px;
-    height: 30px;
-    border: none !important;
-    border-radius: 2px;
-    background-color: var(--light-green);
-    color: var(--white-color);
-}
-
-input{
-    outline: none !important;
-    border:0.5px solid var(--header-color);
-    background-color: transparent !important;
-    border-radius: 2px;
-    color:var(--header-color);
-    font-family: var(--roboto-font);
-    font-weight: bold;
-    padding: 5px;
-    border-radius:3px;
-}
-label{
-    padding-bottom: 6px;
-    font-family: var(--roboto-font);
-    font-weight: bold;
+.btn-green:active {
+  width: 150px;
+  height: 30px;
+  border: none !important;
+  border-radius: 2px;
+  background-color: var(--light-green);
+  color: var(--white-color);
 }
 /* Button Section End Here  */
+
+/* Input & LableSection Start Here */
+input {
+  outline: none !important;
+  border: 0.5px solid var(--header-color);
+  background-color: transparent !important;
+  border-radius: 2px;
+  color: var(--header-color);
+  font-family: var(--roboto-font);
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+}
+label {
+  padding-bottom: 6px;
+  font-family: var(--roboto-font);
+  font-weight: bold;
+}
+/* Input & Lable Section End Here */
 
 /* Header Section Start Here */
 .vgro_header_section {
@@ -91,34 +94,70 @@ label{
   width: 450px;
   height: 350px;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.2); 
-  color:var(--hardGray-color);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--hardGray-color);
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(2px);
   border: 1px solid var(--border-color);
 }
 
 .vgro_name_section {
   display: flex;
   flex-direction: column;
-  padding-bottom:30px;
+  padding-bottom: 30px;
   width: 350px;
 }
 
 .vgro_password_section {
   display: flex;
-  /* padding-bottom: 50px; */
   flex-direction: column;
   width: 350px;
 }
-.vgro_button_section{
-    padding-top: 15px;
+
+.vgro_button_section {
+  padding-top: 15px;
 }
 
-.vgro_form_section form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.vgro_form_section form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 /* Landing Section End Here */
+
+/* Admin Page Section End Here */
+
+
+/* Create Page Section Stat Here */
+
+
+.vgro_Create_Button{
+    margin: auto;
+    width: 80%;
+    Padding-top:150px;
+    padding-bottom:30px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.vgro_Create_Button button{
+    border: none;
+    background-color: var(--header-color);
+    color: var(--white-color);
+    padding: 7px 45px;
+    border-radius: 2px;
+
+}
+.vgro_Create_Button button:active{
+
+    background-color: var(--light-green);
+
+}
+.vgro_table_section{
+    margin: auto;
+    width: 80%;
+}
+
+/* Create Page Section End Here */
