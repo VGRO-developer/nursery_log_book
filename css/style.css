@@ -185,6 +185,18 @@ box-shadow: none !important;
     border-radius: 2px;
     font-weight: bold;
     transition: 0.2s;
+    outline: none;
+
+}
+.vgro_Create_Button button {
+    border: none;
+    background-color: var(--header-color);
+    color: var(--white-color);
+    padding: 7px 45px;
+    border-radius: 2px;
+    font-weight: bold;
+    transition: 0.2s;
+    outline: none;
 
 }
 
@@ -200,6 +212,10 @@ box-shadow: none !important;
 
 }
 
+.create_card_section{
+    display: flex;
+    gap: 15px;
+}
 .vgro_table_section {
     margin: auto;
     width: 80%;
@@ -214,6 +230,10 @@ box-shadow: none !important;
     text-decoration: none;
     color: var(--hardGray-color);
     transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
 }
 
 .edit_button:hover {
@@ -225,6 +245,10 @@ box-shadow: none !important;
     text-decoration: underline;
     color: var(--header-color);
     transition: 0.3s;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
 
 }
 
@@ -238,6 +262,9 @@ box-shadow: none !important;
     text-decoration: none;
     color: var(--red-color);
     transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .delete_button:hover {
@@ -245,4 +272,16 @@ box-shadow: none !important;
     color: var(--red-hover);
 }
 
+.delete_card .Buttons{
+    display: flex;
+    justify-content:center;
+    gap:35px;
+    
+}
+
+.update_card_section{
+    display: flex;
+    gap: 15px;
+    padding:15px;
+}
 /* Create Page Section End Here */
