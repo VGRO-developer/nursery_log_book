@@ -32,7 +32,7 @@
         <!-- LEFT SIDE CONTAINER END HERE -->
 
 
-<!-- ______________________________++++++++++++++++++++++++++++____________________________ -->
+        <!-- ______________________________++++++++++++++++++++++++++++____________________________ -->
 
 
         <!-- RIGHT SIDE CONTAINER START HERE -->
@@ -70,16 +70,182 @@
 
                 <!-- RIGHT SIDE CREATE BUTTON SECTION START HERE -->
                 <div class="vgro_create_button_section">
-                    <button class="create_button">Create New User</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="create_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create New User
+                    </button>
+                    <!-- RIGHT SIDE CREATE MODAL SECTION START HERE -->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create New User </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="vgro_create_user_form_section">
+
+                                        <div class="vgro_name_section">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" id="name" placeholder="Enter User Name.">
+                                        </div>
+
+                                        <div class="vgro_email_section">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" placeholder="Enter User Email Address"
+                                                id="email">
+                                        </div>
+
+                                        <div class="vgro_user_form_image">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Uplaod User Image</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </div>
+
+                                        <div class="vgro_phone_number_section">
+                                            <label for="number">Number</label>
+                                            <input type="number" name="number" id="number"
+                                                placeholder="Enter User Mobile Number ">
+                                        </div>
+
+                                        <div class="vgro_address_section">
+                                            <label for="address">Address</label>
+                                            <textarea name="address" placeholder="Enter User Address" id="address"
+                                                cols="30" rows="8"></textarea>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE CREATE MODAL SECTION END HERE -->
+
+
                 </div>
                 <!-- RIGHT SIDE CREATE BUTTON SECTION END HERE -->
 
 
                 <!-- RIGHT SIDE TABLE SECTION START HERE -->
-                <div class="vgro_content_user_table_section"> 
+                <div class="vgro_content_user_table_section">
                     <div class="vgro_table_container">
+                        <div class="vgro_table_section">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr class="table_content_text">
+                                        <th scope="col">#</th>
+                                        <th scope="col">User Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Password</th>
+                                        <th scope="col">Phone Number</th>
+                                        <th scope="col">User Image</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table_content_text">
+                                        <th scope="row">1</th>
+                                        <td>USER NAME</td>
+                                        <td>User@Email.com</td>
+                                        <td>************</td>
+                                        <td>9876543210</td>
+                                        <td>
+                                            <div class="user_image_show_case">
+                                                <img src="img/User_image.jpg" alt="User_Image">
+                                            </div>
+                                        </td>
+                                        <td class="user_address_show_case">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Quae magnam numquam nemo optio.</td>
+                                        <td>
+                                            <div class="table_action_button_section">
+
+                                                <!-- USER TABLE BTTON SECTION START HERE -->
+
+                                                <button type="button" class="table_view_button Bg_dis" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal1">
+                                                    <span class="material-symbols-outlined">visibility
+                                                    </span>
+                                                </button>
+                                                <!-- Button trigger modal -->
 
 
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">User Details</h5>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                               <div class="vgro_view_list">
+                                                                <div class="User_Name_List">
+                                                                    <label for="User_Name_input">User Name</label>
+                                                                    <input type="text" placeholder="USER NAME" disabled>
+                                                                </div>
+
+                                                               </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- USER TABLE BUTTON SECTION END HERE -->
+                                                <button class="table_edit_button Bg_dis"><span
+                                                        class="material-symbols-outlined">
+                                                        edit
+                                                    </span></button>
+                                                <button class="table_delete_button Bg_dis"><span
+                                                        class="material-symbols-outlined">
+                                                        delete
+                                                    </span></button>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr class="table_content_text">
+                                        <th scope="row">2</th>
+                                        <td>USER NAME</td>
+                                        <td>User@Email.com</td>
+                                        <td>************</td>
+                                        <td>9876543210</td>
+                                        <td>
+                                            <div class="user_image_show_case">
+                                                <img src="img/User_image.jpg" alt="User_Image">
+                                            </div>
+                                        </td>
+                                        <td class="user_address_show_case">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Quae magnam numquam nemo optio.</td>
+                                        <td>
+                                            <div class="table_action_button_section">
+                                                <button>1</button>
+                                                <button>2</button>
+                                                <button>3</button>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <!-- RIGHT SIDE TABLE SECTION END HERE -->

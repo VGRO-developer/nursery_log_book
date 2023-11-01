@@ -5,7 +5,8 @@ body {
     --bg-color: #fcfcfc;
     --white-color: #fff;
     --font-noto: 'Noto Sans', sans-serif;
-    --border-color:#c5c5c5;
+    --border-color: #c5c5c5;
+    --red-color: #ff5252;
 }
 
 
@@ -34,8 +35,8 @@ body {
 
 .vgro_left_container .vgro_left_container_header_section img {
     padding-top: 12px;
-    padding-left:12px;
-    width:100px;
+    padding-left: 12px;
+    width: 100px;
 }
 
 
@@ -71,6 +72,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
 }
+
 /* FOR USER IMAGE */
 .vgro_user_image img {
     width: 35px;
@@ -123,17 +125,138 @@ span {
 }
 
 /* FOR TABLE CONTAINER */
-.vgro_content_user_table_section{
-    display:flex;
+.vgro_content_user_table_section {
+    display: flex;
     justify-content: center !important;
-    
+
 }
-.vgro_table_container{
-    margin-top:50px;
-    width:100%;
+
+/* FOR TABLE CONTAINER */
+.vgro_table_container {
+    margin-top: 50px;
+    width: 100%;
     height: 600px;
-    background-color:var(--white-color);
+    background-color: var(--white-color);
     border: 1px solid var(--border-color);
     border-radius: 5px;
     filter: drop-shadow(2px 4px 6px #333);
+
+}
+
+/* FOR USER MODAL FORM */
+
+.vgro_create_user_form_section {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 35px;
+    flex-direction: column;
+}
+
+/* FOR USER LABEL SECTION  */
+.vgro_create_user_form_section label {
+    font-family: var(--font-noto);
+    color: var(--font-color);
+}
+
+/* FOR USER INPUT SECTION */
+.vgro_create_user_form_section input,
+textarea {
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    border-radius: 2px;
+    outline: none !important;
+}
+
+/* FOR FORM NAME SECTION */
+.vgro_name_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR EMAIL SECTION */
+.vgro_email_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR USER PHONE NUMBER */
+.vgro_phone_number_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR ADDRESS SECTION */
+.vgro_address_section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* FOR TABLE SECTION */
+.vgro_table_section {
+    padding: 10px;
+}
+
+.user_image_show_case {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    overflow: hidden !important;
+
+}
+
+.table_action_button_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bg_dis {
+    background-color: transparent !important;
+    border: none !important;
+    outline: none !important;
+
+}
+
+.user_image_show_case img {
+    width: 50px;
+}
+
+.table_content_text {
+    vertical-align: middle;
+}
+
+.table_view_button span {
+    color: var(--font-color);
+}
+
+.table_edit_button span {
+    color: var(--slider_color);
+
+}
+
+.table_delete_button span {
+    color: var(--red-color);
+}
+
+.modal-backdrop {
+    position: static !important;
+}
+
+.User_Name_List {
+    display: flex !important;
+    align-items: center;
+    gap: 15px;
+}
+
+.User_Name_List input {
+    border: none !important;
+    outline: none !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
 }
